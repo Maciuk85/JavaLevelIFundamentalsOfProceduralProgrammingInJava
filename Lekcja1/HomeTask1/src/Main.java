@@ -79,8 +79,6 @@ public class Main {
 				break;
 			default:
 				System.out.print("Koniec programu");
-				system("pasue");
-				return 0;
 			}
 		}
 		
