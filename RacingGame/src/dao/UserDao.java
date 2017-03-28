@@ -51,7 +51,7 @@ public class UserDao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			MySQLAccess.close(connection, null, preparedStatement);
+			MySQLAccess.close(connection, rs, preparedStatement);
 		}
 		return userRs;
 
