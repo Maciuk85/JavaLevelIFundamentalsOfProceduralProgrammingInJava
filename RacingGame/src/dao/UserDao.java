@@ -6,14 +6,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import model.User;
-import util.MySQLAccess;
 
 public class UserDao {
 
 	private Connection connection;
 
 	public UserDao() {
-		this.connection = MySQLAccess.getConnection();
+//		this.connection = MySQLAccess.getConnection();
 	}
 
 	public void addUser(User user) {
@@ -28,7 +27,7 @@ public class UserDao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			MySQLAccess.close(connection, null, preparedStatement);
+//			MySQLAccess.close(connection, null, preparedStatement);
 		}
 	}
 
@@ -51,7 +50,7 @@ public class UserDao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			MySQLAccess.close(connection, rs, preparedStatement);
+//			MySQLAccess.close(connection, rs, preparedStatement);
 		}
 		return userRs;
 

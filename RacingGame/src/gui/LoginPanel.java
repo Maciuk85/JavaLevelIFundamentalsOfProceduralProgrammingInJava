@@ -7,7 +7,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class LoginPanel extends JPanel {
+public class LoginPanel extends AppPanel {
 	private JTextField textFieldLogin;
 	private JPasswordField passwordFieldPassword;
 	private JButton btnLogin;
@@ -17,20 +17,18 @@ public class LoginPanel extends JPanel {
 	 */
 	public LoginPanel() {
 		super();
-		this.setBounds(0, 0, 1434, 1262);
-		setLayout(null);
 		
 		textFieldLogin = new JTextField();
-		textFieldLogin.setBounds(262, 17, 431, 39);
+		textFieldLogin.setBounds(61, 17, 431, 39);
 		add(textFieldLogin);
 		textFieldLogin.setColumns(10);
 		
 		passwordFieldPassword = new JPasswordField();
-		passwordFieldPassword.setBounds(272, 103, 414, 39);
+		passwordFieldPassword.setBounds(61, 67, 431, 39);
 		add(passwordFieldPassword);
 		
 		btnLogin = new JButton("Login");
-		btnLogin.setBounds(262, 193, 570, 202);
+		btnLogin.setBounds(61, 143, 431, 202);
 		add(btnLogin);
 
 	}

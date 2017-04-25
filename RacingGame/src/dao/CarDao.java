@@ -9,13 +9,12 @@ import java.util.List;
 
 import model.Car;
 import model.User;
-import util.MySQLAccess;
 
 public class CarDao {
 	private Connection connection;
 
 	public CarDao() {
-		this.connection = MySQLAccess.getConnection();
+//		this.connection = MySQLAccess.getConnection();
 	}
 	
 	public List<Car> getAllUserCars(int userID) {
@@ -42,7 +41,7 @@ public class CarDao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			MySQLAccess.close(connection, rs, preparedStatement);
+//			MySQLAccess.close(connection, rs, preparedStatement);
 		}
 		return cars;
 
