@@ -111,6 +111,10 @@ public class MainScr {
 		tableMonday.getTableHeader().setFont(new Font("SansSerif", Font.ITALIC, 15));
 		tableMonday.setRowSelectionAllowed(true);
 		scrollPane.setViewportView(tableMonday);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(215, 63, 172, 249);
+		frame.getContentPane().add(scrollPane_1);
 						
 					
 	}
